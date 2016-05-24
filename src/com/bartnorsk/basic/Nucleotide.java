@@ -10,8 +10,8 @@ public abstract class Nucleotide implements INucleotide {
     private Object value;
 
     public Nucleotide(int arity, Object value) {
-	setArity(arity);
-	setValue(value);
+	this.arity = arity;
+	this.value = value;
     }
     /**
      * @see com.bartnorsk.basic.INucleotide#getArity()
@@ -20,11 +20,6 @@ public abstract class Nucleotide implements INucleotide {
     public int getArity() {
 
 	return this.arity;
-    }
-
-    private void setArity(int arity) {
-	this.arity = arity;
-
     }
     /**
      * @see com.bartnorsk.basic.INucleotide#getValue()

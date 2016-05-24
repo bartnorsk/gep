@@ -24,4 +24,11 @@ public class SumOfTwoNucleotide extends Nucleotide{
     public Object execute() {	
 	return (double)leftAdd.execute()+(double)rightAdd.execute();
     }
+    /*
+     * Value can not be changed
+     * @see com.bartnorsk.basic.Nucleotide#setValue(java.lang.Object)
+     */
+    public void setValue(Object o){
+	super.setValue("+");
+    }
 }
