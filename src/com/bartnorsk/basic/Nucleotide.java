@@ -1,6 +1,6 @@
 package com.bartnorsk.basic;
 /**
- * 
+ * Parent Class of Every Nucleotide
  * @author Bart JV
  *
  */
@@ -21,11 +21,8 @@ public abstract class Nucleotide implements INucleotide {
 
 	return this.arity;
     }
-    /**
-     * @see com.bartnorsk.basic.INucleotide#setArity()
-     */
-    @Override
-    public void setArity(int arity) {
+
+    private void setArity(int arity) {
 	this.arity = arity;
 
     }

@@ -14,25 +14,27 @@ import com.bartnorsk.basic.TypeIntegerNucleotide;
  *
  */
 public class SumOfTwoNucleotideTest {
-    
+
     private SumOfTwoNucleotide nucleotide;
+
     @Before
-    public void setUp(){
-	
+    public void setUp() {
+
     }
+
     @Test
     public void constructorShouldSetArityTwo() {
 	TypeIntegerNucleotide addNuc = new TypeIntegerNucleotide(1);
-	nucleotide = new SumOfTwoNucleotide(addNuc,addNuc);
-	assertEquals(2,nucleotide.getArity());
+	nucleotide = new SumOfTwoNucleotide(addNuc, addNuc);
+	assertEquals(2, nucleotide.getArity());
     }
-    
+
     @Test
-    public void executeShouldReturnThreePointZero(){
+    public void executeShouldReturnThreePointZero() {
 	TypeDoubleNucleotide leftAdd = new TypeDoubleNucleotide(1.0);
 	TypeDoubleNucleotide rightAdd = new TypeDoubleNucleotide(2.0);
-	nucleotide = new SumOfTwoNucleotide(leftAdd,rightAdd);
-	assertEquals(3.0,nucleotide.execute());
+	nucleotide = new SumOfTwoNucleotide(leftAdd, rightAdd);
+	assertEquals(3.0, nucleotide.execute());
     }
 
 }

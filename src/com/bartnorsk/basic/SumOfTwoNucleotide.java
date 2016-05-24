@@ -24,9 +24,4 @@ public class SumOfTwoNucleotide extends Nucleotide{
     public Object execute() {	
 	return (double)leftAdd.execute()+(double)rightAdd.execute();
     }
-    
-
-    
-    
-
 }

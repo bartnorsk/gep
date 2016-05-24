@@ -16,5 +16,5 @@ public class TypeDoubleNucleotide extends Nucleotide{
     @Override
     public Object execute() {
 	return (double)this.getValue();
-    }    
+    }
 }

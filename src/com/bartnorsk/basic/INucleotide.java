@@ -16,14 +16,6 @@ public interface INucleotide {
     public int getArity();
 
     /**
-     * Sets the arity of a Nucleotide. <p>Google Arity of Operator for more
-     * information about Arity.
-     * 
-     * @param arity
-     */
-    public void setArity(int arity);
-
-    /**
      * Returns the value of the Operator.<p> The value is the String/Numeric Value
      * contained in the Nucleotide
      * 

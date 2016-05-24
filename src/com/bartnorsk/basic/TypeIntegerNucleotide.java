@@ -18,5 +18,4 @@ public class TypeIntegerNucleotide extends Nucleotide{
 
 	return (int)this.getValue();
     }   
-
 }
