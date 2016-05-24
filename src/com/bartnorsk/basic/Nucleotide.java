@@ -1,18 +1,24 @@
 package com.bartnorsk.basic;
+
 /**
  * Parent Class of Every Nucleotide
+ * 
  * @author Bart JV
  *
  */
 public abstract class Nucleotide implements INucleotide {
 
     private int arity;
+    /**
+     * Necessary for constructing a readable expression.
+     */
     private Object value;
 
     public Nucleotide(int arity, Object value) {
 	this.arity = arity;
 	this.value = value;
     }
+
     /**
      * @see com.bartnorsk.basic.INucleotide#getArity()
      */
@@ -21,6 +27,7 @@ public abstract class Nucleotide implements INucleotide {
 
 	return this.arity;
     }
+
     /**
      * @see com.bartnorsk.basic.INucleotide#getValue()
      */
@@ -28,6 +35,7 @@ public abstract class Nucleotide implements INucleotide {
     public Object getValue() {
 	return this.value;
     }
+
     /**
      * @see com.bartnorsk.basic.INucleotide#setValue()
      */
