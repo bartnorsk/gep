@@ -45,5 +45,13 @@ public class SumOfTwoNucleotideTest {
 	nucleotide = new SumOfTwoNucleotide(addNuc, addNuc);
 	assertEquals("+", nucleotide.getValue());
     }
+    
+    @Test
+    public void sumDoesntAddTwiceOneOfTheNucleotides(){
+	TypeDoubleNucleotide leftAdd = new TypeDoubleNucleotide(1.0);
+	TypeDoubleNucleotide rightAdd = new TypeDoubleNucleotide(2.0);
+	nucleotide = new SumOfTwoNucleotide(leftAdd, rightAdd);
+	assertFalse(2.0 == (double)nucleotide.execute());
+    }
 
 }
