@@ -13,11 +13,19 @@ import com.bartnorsk.basic.TypeIntegerNucleotide;
 public class TypeIntegerNucleotideTest {
 
     private TypeIntegerNucleotide nucleotide;
+    
     @Test
     public void constructorShouldSetArityToZeroAndValueToOne() {
 	nucleotide = new TypeIntegerNucleotide(1);
 	assertEquals(0,nucleotide.getArity());
 	assertEquals(1,nucleotide.getValue());
     }
+    
+    @Test
+    public void executeShouldReturnValueOne(){
+	nucleotide = new TypeIntegerNucleotide(1);
+	assertEquals(1,nucleotide.execute());
+    }
+    
 
 }

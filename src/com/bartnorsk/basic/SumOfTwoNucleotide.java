@@ -17,8 +17,15 @@ public class SumOfTwoNucleotide extends Nucleotide{
 	this.leftAdd = leftAdd;
 	this.rightAdd = rightAdd;
     }
+    /**
+     * @see com.bartnorsk.basic.INucleotide#execute()
+     */
+    @Override
+    public Object execute() {	
+	return (double)leftAdd.execute()+(double)rightAdd.execute();
+    }
     
-    
+
     
     
 

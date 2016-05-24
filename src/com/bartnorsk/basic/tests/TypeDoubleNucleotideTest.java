@@ -34,5 +34,13 @@ public class TypeDoubleNucleotideTest {
 	assertEquals(0.0,nucleotide.getValue());
 	assertEquals(0,nucleotide.getArity());
     }
+    
+    @Test
+    public void executeShouldReturnValue(){
+	nucleotide = new TypeDoubleNucleotide(0.0);
+	assertEquals(0.0,nucleotide.execute());
+    }
+    
+    
 
 }
